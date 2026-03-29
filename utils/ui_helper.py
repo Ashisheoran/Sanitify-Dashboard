@@ -37,7 +37,13 @@ def score_ring_svg(score: int) -> str:
           stroke-dashoffset="{circ/4:.1f}"
           stroke-linecap="round"/>
         <text x="80" y="80" text-anchor="middle" dominant-baseline="central"
-          font-size="32" font-weight="600" fill="{color}">{score}</text>
+          font-family="IBM Plex Mono, monospace" font-size="32" font-weight="600"
+          fill="{color}">{score}</text>
+        <text x="80" y="108" text-anchor="middle"
+          font-family="IBM Plex Mono, monospace" font-size="9" letter-spacing="3"
+          fill="#475569">/ 100</text>
       </svg>
+      <div class="score-label">QUALITY SCORE</div>
+    </div>
     </div>
     """

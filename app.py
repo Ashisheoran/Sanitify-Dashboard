@@ -27,7 +27,7 @@ profile, issues, score, suggestions = run_analysis(df, sample_size, confidence)
 
 render_metrics(profile, issues, score, suggestions)
 
-tabs = st.tabs(["▣ Profile", "⚠ Issues", "◔ Score", "✦ Fixes", "⤓ Export"])
+tabs = st.tabs(["▣ Profile", "⚠ Quality Issues", "◔ Score", "✦ Fixes", "⤓ Export"])
 
 with tabs[0]:
     render_profile(df, profile)
